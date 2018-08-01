@@ -4,12 +4,12 @@ class CouponsController < ApplicationController
     @coupons= Coupon.all
   end
 
-  def new
-    @coupon = Coupon.new
-  end
-
   def show
     @coupon = Coupon.find(params[:id])
+  end
+
+  def new
+    @coupon = Coupon.new
   end
 
   def create
